@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import  { useState } from 'react';
 
 export default function MyForm(){
   const [formData, setFormData] = useState({
@@ -17,7 +17,7 @@ export default function MyForm(){
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     const response = await fetch('http://localhost:3000/todo', {
