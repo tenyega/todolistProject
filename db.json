@@ -1,28 +1,44 @@
 {
-    "todo":[
-        {
-        "id": "1",
-        "title":"Creation",
-        "date":"08/07/2024",
-        "desc": "Creation dun todoList",
-        "priority":"1",
-        "status":"Pending"
-        },
-        {
-            "id":"2",
-            "title":"edit",
-            "date":"08/07/2024",
-            "desc": "Edition dun todoList",
-            "priority":"3",
-            "status":"Pending"
-        },
-        {
-            "id":"3",
-            "title":"Deletion",
-            "date":"08/07/2024",
-            "desc": "delete dun todoList",
-            "priority":"3",
-            "status":"completed"
-        }   
-        ]
+  "todo": [
+    {
+      "id": "1",
+      "title": "Creation",
+      "date": "2024-07-08",
+      "desc": "Creation dun todoList",
+      "priority": "1",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "title": "edit",
+      "date": "2024-07-08",
+      "desc": "Edition dun todoList",
+      "priority": "3",
+      "status": "Pending"
+    },
+    {
+      "id": "3",
+      "title": "Deletion",
+      "date": "2024-07-08",
+      "desc": "delete dun todoList",
+      "priority": "3",
+      "status": "completed"
+    },
+    {
+      "id": "09b3",
+      "title": "Add",
+      "date": "2024-07-03",
+      "desc": "sdsqdq",
+      "priority": "2",
+      "status": "pending"
+    },
+    {
+      "id": "7d32",
+      "title": "task",
+      "date": "2024-07-12",
+      "desc": "task a faire ",
+      "priority": "1",
+      "status": "pending"
+    }
+  ]
 }
