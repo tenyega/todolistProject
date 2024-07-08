@@ -2,7 +2,8 @@ import { Key, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
- function ToDoList() {
+function ToDoList(props: { search: any; }) {
+    const { search } = props;
      const [resToDo, setResToDo] = useState([]);
      useEffect(() => {
         //Runs only on the first render
@@ -32,6 +33,7 @@ import { NavLink } from 'react-router-dom';
 
   return (
       <>
+      
         <div className="flex gap-5 px-5 py-10 ">
           
         <div className="flex flex-row items-center justify-center min-h-screen gap-5 px-5 py-20 bg-gray-100 flex-wrap">
