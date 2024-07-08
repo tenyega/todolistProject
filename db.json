@@ -1,22 +1,25 @@
-[{
-    "title":"Creation",
-    "date":"08/07/2024",
-    "desc": "Creation dun todoList",
-    "priority":"1",
-    "status":"Pending"
-},
 {
-    "title":"edit",
-    "date":"08/07/2024",
-    "desc": "Edition dun todoList",
-    "priority":"3",
-    "status":"Pending"
-},
-{
-    "title":"Deletion",
-    "date":"08/07/2024",
-    "desc": "delete dun todoList",
-    "priority":"3",
-    "status":"completed"
+    "todo":[
+        {
+        "title":"Creation",
+        "date":"08/07/2024",
+        "desc": "Creation dun todoList",
+        "priority":"1",
+        "status":"Pending"
+        },
+        {
+            "title":"edit",
+            "date":"08/07/2024",
+            "desc": "Edition dun todoList",
+            "priority":"3",
+            "status":"Pending"
+        },
+        {
+            "title":"Deletion",
+            "date":"08/07/2024",
+            "desc": "delete dun todoList",
+            "priority":"3",
+            "status":"completed"
+        }   
+        ]
 }
-]
