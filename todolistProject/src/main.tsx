@@ -1,10 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import './style.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './pages/Home';
+//Creation of router
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    {/* stricMode is the one which gives us all the errors in the navigator .  */}
+     
+    <RouterProvider router={router} />
+   
   </React.StrictMode>,
 )
