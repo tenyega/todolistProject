@@ -32,9 +32,9 @@ import { NavLink } from 'react-router-dom';
 
   return (
       <>
-        <div className="flex gap-5 px-5 py-10">
+        <div className="flex gap-5 px-5 py-10 ">
           
-        <div className="flex flex-row items-center justify-center min-h-screen gap-5 px-5 py-20 bg-gray-100">
+        <div className="flex flex-row items-center justify-center min-h-screen gap-5 px-5 py-20 bg-gray-100 flex-wrap">
             {resToDo.map((data: { id: Key | null | undefined, title: string, date: string, desc:string, priority:number,status:string}) => (
                 <div
                 key={data.id}

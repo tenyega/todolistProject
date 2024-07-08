@@ -1,6 +1,8 @@
 import  { useState } from 'react';
 
-export default function MyForm(){
+export default function MyForm() {
+  
+  const [msg, setMsg] = useState('');
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -17,6 +19,9 @@ export default function MyForm(){
     });
   };
 
+ 
+
+
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
@@ -29,10 +34,15 @@ export default function MyForm(){
     });
 
     if (response.ok) {
-      // Handle success
+      setMsg('Form data submitted successfully');
       console.log('Form data submitted successfully');
+      setFormData({   title: '',
+        date: '',
+          desc: '',
+          priority: '',
+         status:''});
     } else {
-      // Handle error
+      
       console.error('Form data submission failed');
     }
     console.log('Form data submitted:', formData);
@@ -110,9 +120,7 @@ export default function MyForm(){
               <option value="completed">Completed</option>
             
             </select>
-           
-
-         
+    
           
           </div>
           <button
@@ -120,7 +128,8 @@ export default function MyForm(){
             className="w-full px-4 py-2 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Submit
-          </button>
+              </button>
+              {msg}
         </form>
       </div>
             </div>
