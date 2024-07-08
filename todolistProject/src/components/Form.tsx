@@ -101,7 +101,7 @@ export default function MyForm() {
               required
             >
               <option value=""></option>
-              <option value="Low">Low</option>
+              <option value="low">Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
            

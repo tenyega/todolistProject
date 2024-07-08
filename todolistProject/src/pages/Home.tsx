@@ -1,4 +1,3 @@
-import HeroSection from "../components/hero";
 import NavBar from "../components/NavBar";
 import ToDoList from "../components/TodoList";
 

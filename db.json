@@ -5,7 +5,7 @@
       "title": "Creation",
       "date": "2024-07-08",
       "desc": "Creation dun todoList",
-      "priority": "1",
+      "priority": "high",
       "status": "Pending"
     },
     {
@@ -13,7 +13,7 @@
       "title": "edit",
       "date": "2024-07-08",
       "desc": "Edition dun todoList",
-      "priority": "3",
+      "priority": "high",
       "status": "Pending"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Deletion",
       "date": "2024-07-08",
       "desc": "delete dun todoList",
-      "priority": "3",
+      "priority": "high",
       "status": "completed"
     },
     {
@@ -29,7 +29,7 @@
       "title": "Add",
       "date": "2024-07-03",
       "desc": "sdsqdq",
-      "priority": "2",
+      "priority": "medium",
       "status": "pending"
     },
     {
@@ -37,7 +37,7 @@
       "title": "task",
       "date": "2024-07-12",
       "desc": "task a faire ",
-      "priority": "1",
+      "priority": "low",
       "status": "pending"
     },
     {
@@ -53,7 +53,7 @@
       "title": "hi",
       "date": "2024-07-12",
       "desc": "sdfsdfds",
-      "priority": "Low",
+      "priority": "low",
       "status": "pending"
     },
     {
@@ -61,7 +61,15 @@
       "title": "new one ",
       "date": "2024-07-05",
       "desc": "dfsdfs",
-      "priority": "Low",
+      "priority": "low",
+      "status": "pending"
+    },
+    {
+      "id": "0cdd",
+      "title": "hhhhh",
+      "date": "2024-07-13",
+      "desc": "sdfsdfdsf",
+      "priority": "low",
       "status": "pending"
     }
   ]
