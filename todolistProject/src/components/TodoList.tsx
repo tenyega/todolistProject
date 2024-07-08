@@ -1,4 +1,5 @@
 import { Key, useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
  function ToDoList() {
@@ -45,13 +46,9 @@ import { Key, useEffect, useState } from 'react';
                     <h3 className="text-gray-600 text-md">Description: {data.desc}</h3>
                     <h3 className="text-gray-600 text-md">Priority: {data.priority}</h3>
                     <h3 className="text-gray-600 text-md">Status: {data.status}</h3>
+                    <NavLink data-info={data.id} to="/edit" className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Edit</NavLink>
+                    <NavLink data-info={data.id} to="/delete" className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Delete</NavLink>
 
-                <a data-info={data.title} href="/edit"  className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                    Edit
-                    </a>
-                    <a  data-info={data.id}  className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
-                    Delete
-                    </a>
                 </div>
 
             ))}
