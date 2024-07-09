@@ -26,7 +26,7 @@ export default function MyForm() {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
-    const response = await fetch('https://localhost:3000/todo', {
+    const response = await fetch('http://localhost:3000/todo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

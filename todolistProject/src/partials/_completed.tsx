@@ -12,7 +12,7 @@ export default function Completed( props: { message: any; }) {
          
        async function fetchData() {
            try {
-               const response = await fetch('https://localhost:3000/todo');
+               const response = await fetch('http://localhost:3000/todo');
                const datas = await response.json(); 
                if (datas) {
                    setResToDo(datas);
