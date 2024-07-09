@@ -7,8 +7,6 @@ export default function Important() {
     const [resToDo, setResToDo] = useState([]);
      useEffect(() => {
         //Runs only on the first render
-     
-          
         async function fetchData() {
             try {
                 const response = await fetch('http://localhost:3000/todo');
@@ -21,17 +19,13 @@ export default function Important() {
                 setResToDo([]);
             }
         }
-     fetchData();
-    
-
-          
-  
+     fetchData();  
      }, []);
-     console.log(resToDo)
   
         
     return (<>
         <NavBar />
+        
         <h1 className="text-center">Welcome to Important Tasks </h1>
         <div className="flex  flex-col gap-5 px-5 py-10 ">
           

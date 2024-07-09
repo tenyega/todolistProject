@@ -1,5 +1,4 @@
 import NavBar from "../components/NavBar";
-import Search from "../components/Search";
 import ToDoList from "../components/TodoList";
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
     return (
         <>  <div className="relative h-screen w-full">
             <NavBar />
-            <Search />
             <h1 className="text-center"> TODO LIST</h1>
             <h2 className="text-center">{date}</h2>
             

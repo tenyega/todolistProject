@@ -4,13 +4,14 @@ export default function MyForm() {
   
   const [msg, setMsg] = useState('');
   const [formData, setFormData] = useState({
-    title: '',
-    date: '',
+      title: '',
+      date: '',
       desc: '',
       priority: '',
-     status:''
+      status:''
   });
 
+  //here at each change in the form input the value is taken in the pair of key, value and the value of the formdata is set with its current state and the new value. 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
     setFormData({
@@ -34,8 +35,8 @@ export default function MyForm() {
     });
 
     if (response.ok) {
-      setMsg('Form data submitted successfully');
-      console.log('Form data submitted successfully');
+      setMsg('Task added successfully');
+      // the task is added to the form vis Fetch in POST method and then the input fields of the form is cleared 
       setFormData({   title: '',
         date: '',
           desc: '',
