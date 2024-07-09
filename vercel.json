@@ -2,11 +2,11 @@
     "version": 2,
     "builds": [
       { "src": "server.js", "use": "@vercel/node" },
-      { "src": "client/package.json", "use": "@vercel/static-build", "config": { "distDir": "client/build" } }
+      { "src": "todolistProject/package.json", "use": "@vercel/static-build", "config": { "distDir": "todolistProject/build" } }
     ],
     "routes": [
       { "src": "/api/(.*)", "dest": "/server.js" },
-      { "src": "/(.*)", "dest": "/client/$1" }
+      { "src": "/(.*)", "dest": "/todolistProject/$1" }
     ]
   }
   

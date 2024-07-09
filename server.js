@@ -10,9 +10,9 @@ app.use(middlewares);
 app.use('/api', router);
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  app.use(express.static(path.join(__dirname, 'todolistProject/build')));
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'todolistProject/build', 'index.html'));
   });
 }
 
