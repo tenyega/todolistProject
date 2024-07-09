@@ -23,7 +23,7 @@ export default function Edit() {
           
         async function fetchData() {
             try {
-                const response = await fetch('/db.json/todo'+params.id);
+                const response = await fetch('https://localhost:3000/todo'+params.id);
                 const datas = await response.json(); 
                 if (datas) {
                     setResToDo(datas);
@@ -44,7 +44,7 @@ export default function Edit() {
 
     const submit = async (e:any) => {
         e.preventDefault();        try {
-            const response = await fetch('/db.json/todo'+params.id,{
+            const response = await fetch('https://localhost:3000/todo'+params.id,{
                 method: 'DELETE',
                 body: JSON.stringify(resToDo),
                 headers: {
@@ -65,7 +65,7 @@ export default function Edit() {
 
 
         try {
-        const response = await fetch('/db.json/todo'+params.id,{
+        const response = await fetch('https://localhost:3000/todo'+params.id,{
                 method: 'PUT',
                 body: JSON.stringify(resToDo)
 
