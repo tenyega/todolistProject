@@ -5,7 +5,8 @@ import { NavLink } from "react-router-dom";
 export default function Important() {
 
     const [resToDo, setResToDo] = useState([]);
-     useEffect(() => {
+    let compteur = 1;
+    useEffect(() => {
         //Runs only on the first render
         async function fetchData() {
             try {
@@ -33,6 +34,7 @@ export default function Important() {
   
             {resToDo.map((data: { id: Key | null | undefined, title: string, date: string, desc: string, priority: string, status: string })  =>
                 data.priority === 'high' ? (
+                   
                     <div
                     key={data.id}
                     className="w-full max-w-md p-5 text-center bg-white border rounded-lg shadow-md border-neutral-300">
@@ -44,9 +46,11 @@ export default function Important() {
                             <h3 className="text-gray-600 text-md">Priority: {data.priority}</h3>
                             <h3 className="text-gray-600 text-md">Status: {data.status}</h3>
                             <NavLink data-info={data.id} to="/edit" className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Edit</NavLink>
-                            <NavLink data-info={data.id} to="/delete" className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Delete</NavLink>
-    
+                        <NavLink data-info={data.id} to="/delete" className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Delete</NavLink>
+                        <h2> { compteur++}</h2>
+
                     </div>
+                   
                 ) : null
               )}
             </div>

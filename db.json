@@ -1,35 +1,11 @@
 {
   "todo": [
     {
-      "id": "1",
-      "title": "Creation",
-      "date": "2024-07-08",
-      "desc": "Creation dun todoList",
-      "priority": "high",
-      "status": "Pending"
-    },
-    {
-      "id": "2",
-      "title": "edit",
-      "date": "2024-07-08",
-      "desc": "Edition dun todoList",
-      "priority": "high",
-      "status": "Pending"
-    },
-    {
-      "id": "3",
-      "title": "Deletion",
-      "date": "2024-07-08",
-      "desc": "delete dun todoList",
-      "priority": "high",
-      "status": "completed"
-    },
-    {
       "id": "09b3",
       "title": "Add",
       "date": "2024-07-03",
       "desc": "sdsqdq",
-      "priority": "medium",
+      "priority": "high",
       "status": "pending"
     },
     {
@@ -45,7 +21,7 @@
       "title": "hello",
       "date": "2024-07-09",
       "desc": "hello task for tomooo",
-      "priority": "medium",
+      "priority": "high",
       "status": "pending"
     },
     {
@@ -53,7 +29,7 @@
       "title": "hi",
       "date": "2024-07-12",
       "desc": "sdfsdfds",
-      "priority": "low",
+      "priority": "high",
       "status": "pending"
     },
     {

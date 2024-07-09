@@ -80,12 +80,12 @@ export default function ToDoList() {
         setShouldFetch(true);
       
     }
-    
+ 
 
   return (
       <>
     {/* display of search bar and assigning the value of the input to searchTxt at each hit */}
-        <div className="absolute top-0 right-0 p-4">
+        <div className="absolute top-200 right-0 p-4">
             <input
             type="text"
             id="title"
@@ -123,8 +123,8 @@ export default function ToDoList() {
                         {data.title}
                     </h4>
                                     
-                        <NavLink data-info={data.id} to="/edit" className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Edit</NavLink>
-                        <NavLink data-info={data.id} to="/delete" className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Delete</NavLink>
+                        <NavLink data-info={data.id} to={`/edit/${data.id}`} className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Edit</NavLink>
+                      
                     </div>
 
                 ))}
