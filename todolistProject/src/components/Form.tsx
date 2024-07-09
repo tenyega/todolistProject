@@ -91,38 +91,42 @@ export default function MyForm() {
          </div>
           <div className='flex flex-row gap-5'>
         
-            <label className="block text-sm font-medium text-gray-700" htmlFor="priority">Priority</label>
-            <select
-              id="priority"
-              name="priority"
-              value={formData.priority}
-              onChange={handleChange}
-              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-              required
-            >
-              <option value=""></option>
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
-           
-                  </select>
-                  <label className="block text-sm font-medium text-gray-700" htmlFor="status">Status</label>
-            <select
-              id="status"
-              name="status"
-              value={formData.status}
-              onChange={handleChange}
-              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-              required
-            >
-              <option value=""></option>
-              <option value="pending">Pending</option>
-              <option value="completed">Completed</option>
-            
-            </select>
+            <div className='w-1/2'>
+                <label className="block text-sm font-medium text-gray-700" htmlFor="priority">Priority</label>
+                <select
+                  id="priority"
+                  name="priority"
+                  value={formData.priority}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  required
+                >
+                  <option value=""></option>
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+              
+                </select>
+            </div>
+            <div className='w-1/2'>
+                <label className="block text-sm font-medium text-gray-700" htmlFor="date">Status</label>
+                      <input
+                        
+                  type="status"
+                  id="status"
+                  name="status"
+                  value="pending"
+                  className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                      
+                        disabled
+                />
+          </div>
     
           
           </div>
+              
+
+
           <button
             type="submit"
             className="w-full px-4 py-2 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"

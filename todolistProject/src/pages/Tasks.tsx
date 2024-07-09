@@ -1,7 +1,5 @@
 import { SetStateAction, useState } from "react";
-import NavBar from "../components/NavBar";
 import Completed from "../partials/_completed";
-import ToDoList from "../components/TodoList";
 
 export default function Tasks() {
 
@@ -14,8 +12,6 @@ const [selectedOption, setSelectedOption] = useState('');
   };
         
     return (<>
-        <NavBar />
-        <h1 className="text-center">Welcome to Tasks </h1>
         <div className="text-center flex flex-row flex-wrap gap-20 pl-20">
         <div className="flex items-center mb-4 text-center">
           <input
@@ -47,7 +43,7 @@ const [selectedOption, setSelectedOption] = useState('');
             </div>
            
             <div className="mt-4">
-            {selectedOption ? <Completed  message={selectedOption} />  : <ToDoList />}
+            {selectedOption ? <Completed  message={selectedOption} />  : null}
 
         </div>
         </div>
