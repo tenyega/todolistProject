@@ -1,35 +1,22 @@
-import { useState } from "react";
 
 export default function Search() {
 
-    const [search, setSearch] = useState('');
+  // const [searchTxt, setSearchTxt] = useState('');
+  // const [datas, setDatas] = useState([]);
+  // const [compteurMot, SetCompteurMot] = useState(0);
     const handleChange = async(e: { target: { name: any; value: any; }; }) => {
         const value = e.target.value;
         console.log(value)
 
 
-            const url = `http://localhost:3000/todo`;
+            // const url = `http://localhost:3000/todo`;
           
-          
-             try{
-              const res = await fetch(url);
-              const data = await res.json();
+
+  
+              // const res = await fetch(url);
+              // setDatas(await res.json()) ;
         
-          
-              if (data.Response === 'False') {
-                setSearch(' ');
-              } else {
-                setSearch(value)
-              }
-            } catch(err) {
-             
-              console.log(err);
             }
-            
-          
-    
-        }
-     
     
     return (
         <>
@@ -43,8 +30,10 @@ export default function Search() {
       onChange={handleChange}
       className="border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
     />
-  </div>
-
+        </div>
+      
+        {/* <p>On a trouvé {compteurMot} mot</p> */}
+       
         </>
     )
 }

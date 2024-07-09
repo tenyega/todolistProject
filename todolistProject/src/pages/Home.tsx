@@ -10,8 +10,8 @@ export default function Home() {
             <Search />
             <h1 className="text-center"> TODO LIST</h1>
             <h2 className="text-center">{date}</h2>
-            <Search />
-            <ToDoList search={''} />
+            
+            <ToDoList />
             </div>
        </>
     )
